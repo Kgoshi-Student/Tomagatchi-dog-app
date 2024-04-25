@@ -32,14 +32,15 @@
         app:layout_constraintVertical_bias="0.805" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="273dp"
-        android:layout_height="256dp"
+        android:id="@+id/imgWelcome"
+        android:layout_width="264dp"
+        android:layout_height="359dp"
+        android:background="@drawable/image_dogwelcomepage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.324"
-        tools:src="@drawable/image_dogwelcomepage" />
+        app:layout_constraintVertical_bias="0.381" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
