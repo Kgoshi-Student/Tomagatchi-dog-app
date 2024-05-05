@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B67756"
+    android:background="#8F5231"
     tools:context=".Play_Screen">
 
 
@@ -24,6 +24,7 @@
         android:id="@+id/btnFeed"
         android:layout_width="111dp"
         android:layout_height="64dp"
+        android:background="@drawable/custom_button"
         android:text="Feed"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,8 +38,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#AF4524"
-        android:backgroundTint="#AF4524"
+        android:background="#d68a18"
+        android:backgroundTint="#d68a18"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Cleanliness"
         android:textSize="24sp"
@@ -54,8 +55,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#AF4524"
-        android:backgroundTint="#AF4524"
+        android:background="#d68a18"
+        android:backgroundTint="#d68a18"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Hunger"
         android:textSize="24sp"
@@ -71,23 +72,24 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#AF4524"
-        android:backgroundTint="#AF4524"
+        android:background="#d68a18"
+        android:backgroundTint="#d68a18"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Happiness"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861" />
+        app:layout_constraintVertical_bias="0.858" />
 
     <Button
         android:id="@+id/btnClean"
         android:layout_width="111dp"
         android:layout_height="64dp"
+        android:background="@drawable/custom_button"
         android:text="Clean"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -100,6 +102,7 @@
         android:id="@+id/btnPlay"
         android:layout_width="111dp"
         android:layout_height="64dp"
+        android:background="@drawable/custom_button"
         android:text="Play"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,9 +115,10 @@
     <ProgressBar
         android:id="@+id/prgHunger"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="138dp"
-        android:layout_height="29dp"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
         android:progress="20"
+        android:progressDrawable="@drawable/custom_progress_bar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.853"
@@ -125,9 +129,10 @@
     <ProgressBar
         android:id="@+id/prgClean"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="138dp"
-        android:layout_height="29dp"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
         android:progress="10"
+        android:progressDrawable="@drawable/custom_progress_bar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.853"
@@ -138,14 +143,54 @@
     <ProgressBar
         android:id="@+id/prgHappiness"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="138dp"
-        android:layout_height="29dp"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
         android:progress="32"
+        android:progressDrawable="@drawable/custom_progress_bar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+        android:id="@+id/txtHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prgHappiness"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/prgHappiness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prgClean"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtHunger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/prgClean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prgHunger"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

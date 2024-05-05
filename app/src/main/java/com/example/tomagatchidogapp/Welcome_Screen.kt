@@ -12,9 +12,6 @@ class Welcome_Screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
-        /*var imgWelcome = findViewById<ImageView>(R.id.imgWelcome)
-
-        imgWelcome.setBackgroundResource(R.drawable.image_dogwelcomepage)*/
         var WelcomeButton =  findViewById<Button>(R.id.btnWelcome)
 
         WelcomeButton?.setOnClickListener {
